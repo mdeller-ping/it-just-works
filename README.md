@@ -7,10 +7,28 @@ Quickly stand up vanilla software assets from Ping Identity, such as PingFederat
 * Docker
 * [Ping Identity Devops Key](https://pingidentity-devops.gitbook.io/devops/getstarted/devopsregistration)
 
-## How to use
+## Create a network
 
-Clone this repo.  Edit the specific env-vars file.
+Create an external bridged network for communication between containers.
 
 ```
+docker network create pingnet
+```
+
+## How to use
+
+Clone this repo.  Edit the specific env-vars file with your devops keys and acceptance of the EULA.
+
+```
+docker-compose up -d
+```
+
+## TL;DR PingFederate
+
+```
+docker network create pingnet
+git clone https://github.com/mdeller-ping/it-just-works
+cd pingfederate
+vi env-vars
 docker-compose up -d
 ```
