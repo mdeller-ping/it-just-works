@@ -1,0 +1,27 @@
+version: "3.5"
+
+services:
+  pingdirectory:
+    image: pingidentity/pingdirectory:2006-8.0.0.1
+    environment:
+      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+      - SERVER_PROFILE_PATH=getting-started/pingdirectory
+    env_file:
+      - env-vars
+    ulimits:
+      nproc:
+        soft: 16384
+        hard: 16384
+      nofile:
+        soft: 65535
+        hard: 65535
+    ports:
+      - "1389:389"
+      - "1636:636"
+      - "1443:443"
+    networks:
+      - pingnet
+
+networks:
+  pingnet:
+    external: true
