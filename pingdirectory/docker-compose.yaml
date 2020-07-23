@@ -21,6 +21,8 @@ services:
       - "1443:443"
     networks:
       - pingnet
+    volumes:
+      - ./volume:/opt/out
 
 networks:
   pingnet:

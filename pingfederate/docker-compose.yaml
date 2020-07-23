@@ -13,6 +13,8 @@ services:
       - "9999:9999"
     networks:
       - pingnet
+    volumes:
+      - ./volume:/opt/out
 
 networks:
   pingnet:

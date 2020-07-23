@@ -1,6 +1,6 @@
 # It should just work
 
-Quickly stand up vanilla software assets from Ping Identity, such as PingFederate, using Docker Compose.  Specific image tags are used, to produce predictable outcomes.  Each product directory is self contained.
+Quickly stand up vanilla software assets from Ping Identity, such as PingFederate, using Docker Compose.  Specific image tags are used, to produce predictable outcomes.  Each product directory is self contained.  Your data will persist in the volume sub directory.
 
 ## Prerequisites
 
