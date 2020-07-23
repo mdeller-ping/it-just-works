@@ -28,7 +28,7 @@ docker-compose up -d
 ```
 docker network create pingnet
 git clone https://github.com/mdeller-ping/it-just-works
-cd pingfederate
+cd it-just-works/pingfederate
 vi env-vars
 docker-compose up -d
 ```
