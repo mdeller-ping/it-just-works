@@ -16,3 +16,4 @@ services:
 
 networks:
   pingnet:
+    external: true
