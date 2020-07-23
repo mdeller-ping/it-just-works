@@ -4,8 +4,8 @@ Quickly stand up individual software assets from Ping Identity, such as PingFede
 
 ## Prerequisites
 
-Docker
-[Ping Identity Devops Key](https://pingidentity-devops.gitbook.io/devops/getstarted/devopsregistration)
+* Docker
+* [Ping Identity Devops Key](https://pingidentity-devops.gitbook.io/devops/getstarted/devopsregistration)
 
 ## How to use
 
