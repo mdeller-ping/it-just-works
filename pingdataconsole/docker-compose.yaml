@@ -1,0 +1,15 @@
+version: "3.5"
+
+services:
+  pingdataconsole:
+    image:  pingidentity/pingdataconsole:2006-8.1.0.0
+    env_file:
+      - env-vars
+    ports:
+      - "8443:8443"
+    networks:
+      - pingnet
+
+networks:
+  pingnet:
+    external: true
