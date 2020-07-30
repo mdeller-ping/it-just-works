@@ -59,7 +59,9 @@ docker-compose down
 | PingAccess | 9000 | administrator / 2FederateM0re | https://localhost:9000 |
 | PingCentral | 9022 | administrator / 2Federate | https://localhost:9022 |
 | PingDirectory | 1389, 1443, 1636 | administrator / 2FederateM0re | (See PingDataConsole) |
-| PingDataConsole | 8443 | administrator / 2FederateM0re | https://localhost:8443 |
+| PingDataGovernance | 8080, 7389, 7443, 7636 | administrator / 2FederateM0re | (See PingDataConsole) |
+| PingDataGovernance PAP | 8443 | administrator / 2FederateM0re | https://localhost:8443 |
+| PingDataConsole | 9443 | administrator / 2FederateM0re | https://localhost:9443/console |
 
 ## TL;DR PingFederate
 
