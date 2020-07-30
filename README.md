@@ -18,7 +18,7 @@ docker network create pingnet
 Clone this repo.
 
 ```
-docker-compose up -d
+git clone https://github.com/mdeller-ping/it-just-works
 ```
 
 Change into the product directory you wish to run.
@@ -27,7 +27,7 @@ Change into the product directory you wish to run.
 cd it-just-works/pingfederate
 ```
 
-Edit the env-vars file with your devops keys and acceptance of the EULA.
+Edit the env-vars file adding your EULA acceptance and devops keys.
 
 ```
 vi env-vars
