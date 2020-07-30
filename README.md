@@ -51,6 +51,16 @@ Stop the container
 docker-compose down
 ```
 
+## Default Connection Info
+
+| Product | Listening Ports | Credential | URL |
+| --- | --- | --- | --- |
+| PingFederate | 9031, 9999 | administrator / 2FederateM0re | https://localhost:9999/pingfederate |
+| PingAccess | 9000 | administrator / 2FederateM0re | https://localhost:9000 |
+| PingCentral | 9022 | administrator / 2Federate | https://localhost:9022 |
+| PingDirectory | 1389, 1443, 1636 | administrator / 2FederateM0re | (See PingDataConsole) |
+| PingDataConsole | 8443 | administrator / 2FederateM0re | https://localhost:8443 |
+
 ## TL;DR PingFederate
 
 ```
