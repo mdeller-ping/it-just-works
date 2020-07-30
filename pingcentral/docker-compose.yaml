@@ -31,6 +31,8 @@ services:
       - "3306:3306"
     networks:
       - pingnet
+    volumes:
+      - ./volume/mysql:/var/lib/mysql
 
 networks:
   pingnet:
