@@ -6,7 +6,7 @@ services:
     env_file:
       - env-vars
     ports:
-      - "8443:8443"
+      - "9443:8443"
     networks:
       - pingnet
 
