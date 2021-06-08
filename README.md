@@ -67,9 +67,9 @@ docker-compose down
 
 https://localhost:9443/console
 
-Server: pingdirectory:1636
-Username: administrator
-Password: 2FederateM0re
+* Server: pingdirectory:1636
+* Username: administrator
+* Password: 2FederateM0re
 
 ## TL;DR PingFederate
 
