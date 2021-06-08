@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   pingfederate:
-    image: pingidentity/pingfederate:2009-10.1.1
+    image: pingidentity/pingfederate:2104-10.2.2
     environment:
       - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
       - SERVER_PROFILE_PATH=getting-started/pingfederate
