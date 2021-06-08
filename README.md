@@ -5,7 +5,7 @@ Quickly stand up vanilla software assets from Ping Identity, such as PingFederat
 ## Prerequisites
 
 * Docker
-* [Ping Identity Devops Key](https://pingidentity-devops.gitbook.io/devops/getstarted/devopsregistration)
+* [Ping Identity Devops Key](https://devops.pingidentity.com/get-started/getStarted/)
 
 ## How to use
 
