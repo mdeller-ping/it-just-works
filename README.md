@@ -63,6 +63,14 @@ docker-compose down
 | PingDataGovernance PAP | 8443 | administrator / 2FederateM0re | https://localhost:8443 |
 | PingDataConsole | 9443 | administrator / 2FederateM0re | https://localhost:9443/console |
 
+## PingDataConsole Sign In to PingDirectory
+
+https://localhost:9443/console
+
+Server: pingdirectory:1636
+Username: administrator
+Password: 2FederateM0re
+
 ## TL;DR PingFederate
 
 ```
