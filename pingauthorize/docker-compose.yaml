@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   pingauthorize:
-    image: pingidentity/pingauthorize:edge
+    image: pingidentity/pingauthorize:8.3.0.0-edge
     command: wait-for pingdirectory:1389 -t 300 -- entrypoint.sh start-server
     environment:
       - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
@@ -26,7 +26,7 @@ services:
       - ./volume/pingauthorize:/opt/out
 
   pingauthorizepap:
-    image: pingidentity/pingauthorizepap:edge
+    image: pingidentity/pingauthorizepap:8.3.0.0-edge
     environment:
       - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
       - SERVER_PROFILE_PATH=paz-pap-integration/pingauthorize
