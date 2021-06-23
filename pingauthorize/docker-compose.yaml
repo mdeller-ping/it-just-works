@@ -1,0 +1,52 @@
+version: "3.5"
+
+services:
+  pingauthorize:
+    image: pingidentity/pingauthorize:edge
+    command: wait-for pingdirectory:1389 -t 300 -- entrypoint.sh start-server
+    environment:
+      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+      - SERVER_PROFILE_PATH=baseline/pingauthorize
+    env_file:
+      - env-vars
+    ulimits:
+      nproc:
+        soft: 16384
+        hard: 16384
+      nofile:
+        soft: 65535
+        hard: 65535
+    ports:
+      - "7389:1389"
+      - "7636:1636"
+      - "7443:1443"
+    networks:
+      - pingnet
+    volumes:
+      - ./volume/pingauthorize:/opt/out
+
+  pingauthorizepap:
+    image: pingidentity/pingauthorizepap:edge
+    environment:
+      - SERVER_PROFILE_URL=https://github.com/pingidentity/pingidentity-server-profiles.git
+      - SERVER_PROFILE_PATH=paz-pap-integration/pingauthorize
+      - HTTPS_PORT=8443
+    env_file:
+      - env-vars
+    ulimits:
+      nproc:
+        soft: 16384
+        hard: 16384
+      nofile:
+        soft: 65535
+        hard: 65535
+    ports:
+      - "8443:8443"
+    networks:
+      - pingnet
+    volumes:
+      - ./volume/pingauthorizepap:/opt/out
+
+networks:
+  pingnet:
+    external: true
